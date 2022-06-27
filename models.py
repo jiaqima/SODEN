@@ -203,6 +203,16 @@ class MLPODEFunc(BaseSurvODEFunc):
                             batch_norm=batch_norm)
 
     def forward(self, t, y):
+        """
+        Arguments:
+          t: When self.batch_time_mode is False, t is a scalar indicating the
+            time step to be evaluated. When self.batch_time_mode is True, t is
+            a 1-D tensor with a single element [1.0].
+          y: When self.batch_time_mode is False, y is a 1-D tensor with length
+            2, where the first dim indicates Lambda_t, and the second dim
+            indicates the final time step T to be evaluated. When self.batch_time_mode is True, y
+            is a 2-D tensor with batch_size * 2.
+        """
         self.nfe += 1
         device = next(self.parameters()).device
         T = y.index_select(-1, torch.tensor([1]).to(device)).view(-1, 1)
