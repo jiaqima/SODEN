@@ -4,7 +4,7 @@ This repo provides a pytorch implementation for the proposed model, *SODEN*, in 
 
 [SODEN: A Scalable Continuous-Time Survival Model through Ordinary Differential Equation Networks](https://arxiv.org/abs/2008.08637)
 
-[Weijing Tang](https://sites.google.com/umich.edu/weijingtang/home)\*, [Jiaqi Ma](http://www.jiaqima.com)\*, [Qiaozhu Mei](http://www-personal.umich.edu/~qmei/), and [Ji Zhu](http://dept.stat.lsa.umich.edu/~jizhu/). To appear in JMLR.
+[Weijing Tang](https://sites.google.com/umich.edu/weijingtang/home)\*, [Jiaqi Ma](http://www.jiaqima.com)\*, [Qiaozhu Mei](http://www-personal.umich.edu/~qmei/), and [Ji Zhu](http://dept.stat.lsa.umich.edu/~jizhu/). JMLR, Vol. 23, pp.34-1.
 
 (\* equal contribution.)
 
